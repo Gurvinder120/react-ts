@@ -12,7 +12,7 @@ const blog1 = () => {
           <br /> management software
         </div>
       </div>
-      <div className="for-flex">
+      <div className="for-flex-2">
         <div className="right-arts">
           <div className="des-right">
             <h5>Title</h5>

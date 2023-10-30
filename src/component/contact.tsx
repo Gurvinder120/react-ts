@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 function Contact() {
-  const [form, setForm] = useState({});
+  const [form, setFrom] = useState({});
 
   const handleForm = (e: any) => {
-    setForm({
+    setFrom({
       ...form,
-      [e.target.name]: [e.target.value],
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -21,6 +21,7 @@ function Contact() {
     });
 
     const data = await response.json();
+
     console.log(data);
   };
 
@@ -29,19 +30,16 @@ function Contact() {
       <h1>Contact Us</h1>
       <div className="user-feedback">
         <input
-          // type="email"
+          type="email"
           name="useremail"
           id="user-email"
           placeholder="Enter your email"
-          // required
           onChange={handleForm}
         />
-        <input
-          type="text"
+        <textarea
           name="userfeedback"
           id="user-feedback"
           placeholder="Enter something"
-          // required
           onChange={handleForm}
         />
         <input type="submit" id="submit-btn" value="Submit" />

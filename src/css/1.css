@@ -90,6 +90,7 @@ h5 {
 
 .for-flex-2 {
   display: flex;
+  flex-direction: column-reverse;
   max-width: 160rem;
   margin: 0 auto;
 }
@@ -114,6 +115,7 @@ h5 {
   margin-top: 3rem;
   color: grey;
 }
+
 .art-eg {
   position: relative;
   display: inline-block;
@@ -147,7 +149,7 @@ ol li {
   margin-left: 5rem;
 }
 
-.article-description > *:not(img) {
+.article-description>*:not(img) {
   margin-top: 1.6rem;
   display: flex;
   flex-direction: column;
@@ -275,6 +277,7 @@ ol li {
     margin-top: 15rem;
     text-align: center;
   }
+
   .btn-right {
     display: flex;
     justify-content: center;
@@ -308,6 +311,7 @@ ol li {
     text-align: center;
     font-size: 4rem;
   }
+
   #popular-head {
     font-size: 3rem;
   }
@@ -333,11 +337,11 @@ ol li {
     font-size: 2.3rem;
   }
 
-  .article-1 > a,
-  .article-2 > a,
-  .article-3 > a,
-  .article-4 > a,
-  .article-5 > a {
+  .article-1>a,
+  .article-2>a,
+  .article-3>a,
+  .article-4>a,
+  .article-5>a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -364,9 +368,9 @@ ol li {
     gap: 15rem;
   }
 
-  .tip-1 > .tip,
-  .tip-2 > .tip,
-  .tip-3 > .tip {
+  .tip-1>.tip,
+  .tip-2>.tip,
+  .tip-3>.tip {
     font-size: 2.75rem;
   }
 
@@ -423,7 +427,7 @@ ol li {
     justify-content: center;
   }
 
-  .article-description > *:not(img) {
+  .article-description>*:not(img) {
     margin: 0 5rem;
     text-align: center;
   }
